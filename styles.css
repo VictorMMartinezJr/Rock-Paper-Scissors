@@ -41,6 +41,7 @@ body {
   width: 100%;
   padding: 2rem 0;
 }
+/** ScoreBoard **/
 .rps_scoreboard {
   outline: 2px solid var(--Header-Outline);
   width: 90%;
@@ -50,12 +51,9 @@ body {
   padding: 0 0.5rem;
   border-radius: 5px;
 }
-.rps_scoreboard_text_container {
-  color: #fff;
-  line-height: 0.8;
-}
-.rps_scoreboard_text {
-  font-size: 1.2rem;
+.rps_scoreboard_img {
+  height: 50px;
+  margin-left: 0.5rem;
 }
 .rps_scoreboard_score_container {
   padding: 0.2rem 1.5rem;
@@ -76,3 +74,4 @@ body {
   color: var(--Dark-Text);
   font-weight: 700;
 }
+/** Game Options **/
