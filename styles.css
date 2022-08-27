@@ -4,7 +4,6 @@
   --Scissors-Gradient: hsl(39, 89%, 49%), hsl(40, 84%, 53%);
   --Paper-Gradient: hsl(230, 89%, 62%), hsl(230, 89%, 65%);
   --Rock-Gradient: hsl(349, 71%, 52%), hsl(349, 70%, 56%);
-  --Lizard-Gradient: hsl(261, 73%, 60%), hsl(261, 72%, 63%);
   --Cyan: hsl(189, 59%, 53%), hsl(189, 58%, 57%);
   --Dark-Text: hsl(229, 25%, 31%);
   --Score-Text: hsl(229, 64%, 46%);
@@ -41,7 +40,9 @@ body {
   width: 100%;
   padding: 2rem 0;
 }
-/** ScoreBoard **/
+/********************/
+/**   Scoreboard   **/
+/********************/
 .rps_scoreboard {
   outline: 2px solid var(--Header-Outline);
   width: 90%;
@@ -74,4 +75,69 @@ body {
   color: var(--Dark-Text);
   font-weight: 700;
 }
-/** Game Options **/
+/********************/
+/**  Game Options  **/
+/********************/
+.rps_options {
+  position: relative;
+}
+.rps_options_triangle {
+  width: 200px;
+}
+.rps_options_option {
+  position: absolute;
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  cursor: pointer;
+}
+.rps_options_img_container {
+  background-color: #fff;
+  height: 90px;
+  width: 90px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/** Paper **/
+.rps_options_option--paper {
+  background: linear-gradient(var(--Paper-Gradient));
+  top: -30px;
+  left: -30px;
+}
+/** Scissors **/
+.rps_options_option--scissors {
+  background: linear-gradient(var(--Scissors-Gradient));
+  top: -30px;
+  right: -30px;
+}
+/** Rock **/
+.rps_options_option--rock {
+  background: linear-gradient(var(--Rock-Gradient));
+  bottom: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+@media screen and (min-width: 320px) {
+  .rps_options_triangle {
+    width: 230px;
+  }
+}
+@media screen and (min-width: 390px) {
+  .rps_options_triangle {
+    width: 280px;
+  }
+  .rps_options_option {
+    height: 140px;
+    width: 140px;
+  }
+  .rps_options_img_container {
+    height: 100px;
+    width: 100px;
+  }
+}
