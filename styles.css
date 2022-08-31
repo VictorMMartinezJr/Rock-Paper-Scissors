@@ -115,6 +115,9 @@ body {
   top: -30px;
   left: -30px;
 }
+.rps_options_option--paper-active {
+  background: linear-gradient(var(--Paper-Gradient));
+}
 /** Scissors **/
 .rps_options_img_container--scissors {
   background-image: url(images/icon-scissors.svg);
@@ -123,6 +126,9 @@ body {
   background: linear-gradient(var(--Scissors-Gradient));
   top: -30px;
   right: -30px;
+}
+.rps_options_option--scissors-active {
+  background: linear-gradient(var(--Scissors-Gradient));
 }
 /** Rock **/
 .rps_options_img_container--rock {
@@ -133,6 +139,28 @@ body {
   bottom: -30px;
   left: 50%;
   transform: translateX(-50%);
+}
+.rps_options_option--rock-active {
+  background: linear-gradient(var(--Rock-Gradient));
+}
+
+/** Active States **/
+.rps_options--active {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: static;
+  width: 90%;
+}
+.rps_options_option--active {
+  position: relative;
+}
+.rps_options_option_text {
+  position: absolute;
+  bottom: -50px;
+  color: #fff;
+  letter-spacing: 2px;
+  white-space: nowrap;
 }
 .hide {
   display: none;
