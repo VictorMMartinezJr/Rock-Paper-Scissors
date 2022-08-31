@@ -27,7 +27,7 @@
           <!-- Scorebox -->
           <div class="rps_scoreboard_score_container">
             <p class="rps_scoreboard_score_text">SCORE</p>
-            <p class="rps_scoreboard_score_number">12</p>
+            <p class="rps_scoreboard_score_number">0</p>
           </div>
         </div>
         <!-------------------->
@@ -40,10 +40,7 @@
             class="rps_options_triangle"
           />
           <!-- Paper -->
-          <div
-            class="rps_options_option rps_options_option--paper"
-            id="left-option"
-          >
+          <div class="rps_options_option rps_options_option--paper" id="paper">
             <div
               class="rps_options_img_container rps_options_img_container--paper"
             ></div>
@@ -51,17 +48,14 @@
           <!-- Scissors -->
           <div
             class="rps_options_option rps_options_option--scissors"
-            id="right-option"
+            id="scissors"
           >
             <div
               class="rps_options_img_container rps_options_img_container--scissors"
             ></div>
           </div>
           <!-- Rock -->
-          <div
-            class="rps_options_option rps_options_option--rock"
-            id="bottom-option"
-          >
+          <div class="rps_options_option rps_options_option--rock" id="rock">
             <div
               class="rps_options_img_container rps_options_img_container--rock"
             ></div>
@@ -92,6 +86,10 @@
             <p class="rps_options_option_text">THE HOUSE PICKED</p>
           </div>
         </div>
+        <div class="results hide">
+          <p class="results_text"></p>
+          <button class="results_btn">PLAY AGAIN</button>
+        </div>
         <!-------------------->
         <!--     Rules      -->
         <!-------------------->
@@ -99,7 +97,7 @@
         <btn class="rps_rules_btn">RULES</btn>
         <!-- Modal -->
         <div class="rps_rules_modal">
-          <div>
+          <div class="rps_rules_modal--desktop-header">
             <p class="rps_rules_modal_title">RULES</p>
             <img
               src="images/icon-close.svg"
